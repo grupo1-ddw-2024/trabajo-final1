@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    color: #444;
+    line-height: 1.6;
+}
+
+header {
+    background-image: url('header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 1rem 0;
+    position: relative;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+nav, header h1, header p {
+    z-index: 2;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #d45d42;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+main {
+    padding: 6rem 2rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro-section {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.intro-section img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.info-item {
+    flex: 1 1 calc(50% - 2rem);
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.info-item img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.info-item, .sabor-item, .card {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-item:hover, .sabor-item:hover, .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.mensaje-btn {
+    background-color: #d45d42;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mensaje-btn:hover {
+    background-color: #b03d30;
+}
+
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid #ccc;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.sabores-section {
+    text-align: center;
+    padding: 6rem 2rem 2rem;
+}
+
+.sabores-section h2 {
+    font-size: 2.5rem;
+    color: #444;
+    margin-bottom: 2rem;
+}
+
+.sabores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sabor-item {
+    text-align: center;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sabor-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.sabor-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.sabor-item h3 {
+    font-size: 1.5rem;
+    color: #444;
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+.sabor-item p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.reservas-section {
+    text-align: center;
+    padding: 6rem 2rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.reservas-section h2 {
+    font-size: 2.5rem;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.reservas-section p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.reservas-img {
+    width: 150px;
+    height: 150px;
+    margin: 2rem auto;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.reservas-img:hover {
+    transform: scale(1.1);
+}
+
+.reservas-btn {
+    background-color: #d45d42;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 1rem;
+}
+
+.reservas-btn:hover {
+    background-color: #b03d30;
+    transform: scale(1.05);
+}
+
+.contacto-section {
+    text-align: center;
+    padding: 6rem 2rem 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contacto-section h2 {
+    font-size: 2.5rem;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.contacto-section p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    width: 100%;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.form-group label {
+    font-size: 1rem;
+    color: #444;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: #d45d42;
+    outline: none;
+}
+
+.contacto-btn {
+    background-color: #d45d42;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contacto-btn:hover {
+    background-color: #b03d30;
+    transform: scale(1.05);
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+}
+
+.card {
+    width: 300px;
+    height: auto;
+    margin: 0 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.carousel-control-prev, .carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: black;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 300px;
+        margin: 10px 0;
+    }
+
+    .info-item {
+        flex: 1 1 calc(100% - 2rem);
+    }
+}
+
+.location-section {
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.map-container {
+    margin-top: 1rem;
+}
+
+iframe {
+    border-radius: 8px;
+}
+
+.reviews-section {
+    text-align: center;
+    background-color: #fff;
+    padding: 4rem 2rem;
+}
+
+.reviews {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.review-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review-item p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.review-item strong {
+    font-weight: bold;
+    color: #333;
+}
+
+.btn-leer-mas {
+    display: inline-block;
+    background-color: #d45d42;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-leer-mas:hover {
+    background-color: #b03d30;
+}

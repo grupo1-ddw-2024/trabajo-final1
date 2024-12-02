@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELADO DE LIMA</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="imagenes/helado.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Helado de Lima</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sabores.html">Sabores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reservas.html">Reservas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <ul class="social-icons">
+                        <li><a href="https://www.facebook.com/heladodelimaoficial" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/helado_delima/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://api.whatsapp.com/send/?phone=51955364272&text&type=phone_number&app_absent=0" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro-section text-center">
+            <h2>Bienvenido a Helado de Lima</h2>
+            <p>Descubre nuestros deliciosos sabores y promociones especiales.</p>
+            <img src="imagenes/bienvenida.jpg" alt="Imagen de bienvenida" class="img-fluid rounded">
+        </section>
+
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Primera Slide -->
+                <div class="carousel-item active">
+                    <div class="d-flex">
+                        <div class="card" style="width: 18rem;">
+                            <img src="imagenes/chocolate.jfif" class="card-img-top" alt="Imagen 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Helado de chocolate</h5>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="imagenes/fresa.jfif" class="card-img-top" alt="Imagen 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Helado de fresa</h5>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="imagenes/menta.jfif" class="card-img-top" alt="Imagen 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Helado de menta</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Segunda Slide -->
+                <div class="carousel-item">
+                    <div class="d-flex">
+                        <div class="card" style="width: 18rem;">
+                            <img src="imagenes/maracuya.jpg" class="card-img-top" alt="Imagen 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Helado de maracuya</h5>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="imagenes/oreo.jpg" class="card-img-top" alt="Imagen 5">
+                            <div class="card-body">
+                                <h5 class="card-title">Helado de oreo</h5>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="imagenes/pistacho.jpg" class="card-img-top" alt="Imagen 6">
+                            <div class="card-body">
+                                <h5 class="card-title">Helado de pistacho</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>       
+
+        <section class="info-container">
+            <div class="info-item">
+                <img src="imagenes/logo.jfif" alt="Logo Sabores de la Casa" class="logo-img">
+                <h3>¿Quiénes <span class="resaltado">SOMOS?</span></h3>
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#contactModal">
+                    Enviar un mensaje
+                </button>
+            </div>
+            <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="contactModalLabel">Formulario de Contacto</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="recipient-name" class="col-form-label">Nombre:</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                          <label for="message-text" class="col-form-label">Mensaje:</label>
+                          <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary">Enviar mensaje</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="info-item">
+                <img src="imagenes/local.PNG" alt="Nuestro Local" class="local-img">
+                <h3>NUESTRO LOCAL</h3>
+            </div>
+        </section>
+        <section class="reviews-section">
+            <h2>Opiniones de nuestros clientes</h2>
+            <div class="reviews">
+                <div class="review-item" data-aos="fade-up">
+                    <p>"¡El helado es increíblemente cremoso y delicioso! El mejor que he probado."</p>
+                    <p><strong>- Juan Pérez</strong></p>
+                </div>
+                <div class="review-item" data-aos="fade-up" data-aos-delay="100">
+                    <p>"Cada sabor es único y refrescante. ¡Definitivamente volveré por más!"</p>
+                    <p><strong>- María Gómez</strong></p>
+                </div>
+                <div class="review-item" data-aos="fade-up" data-aos-delay="200">
+                    <p>"Una experiencia única. Los sabores artesanales son inigualables."</p>
+                    <p><strong>- Carlos Méndez</strong></p>
+                </div>
+            </div>
+            <a href="contacto.html" class="btn-leer-mas">Leer más opiniones</a>
+        </section>
+        <section class="location-section">
+            <h2>Visítanos</h2>
+            <p>Estamos ubicados en el corazón de la ciudad.</p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62415.209203599734!2d-77.08609471703475!3d-12.1155343222275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c9f3a35e91a9%3A0xfd44fb8383fcc125!2sHelado%20de%20Lima!5e0!3m2!1ses-419!2spe!4v1733102945054!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 Helado de Lima. Todos los derechos reservados.</p>
+            <p><a href="contacto.html">Contáctanos</a> | <a href="#">Política de privacidad</a></p>
+        </div>
+    </footer>    
+
+</body>
+</html>
